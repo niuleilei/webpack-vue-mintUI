@@ -45,7 +45,7 @@
         methods:{
           // http://vue.studyit.io
            getlunbotu(){
-              this.$http.get('./src/data/lunbo.json').then(res=>{
+              this.$http.get('/src/data/lunbo.json').then(res=>{
                   console.log(res)
                   var data=res.body;
                   var dataList=[]

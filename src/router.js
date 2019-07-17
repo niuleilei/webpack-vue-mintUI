@@ -10,6 +10,7 @@ import newsCont from './components/newsCont/newsinfo.vue'
 import photo from './components/Photo/photo.vue'
 import goodList from './components/goods/goodList.vue'
 import goodInfo from './components/goods/goodInfo.vue'
+import vuex from "./components/vuex.vue"
 var router=new VueRouter({
     routes:[
         {path:'/',redirect:'/home',meta:{title:'首页'}},//路由重定向
@@ -26,6 +27,7 @@ var router=new VueRouter({
             }},
         {path:'/home/goodsList',component:goodList},
         {path:'/home/goodInfo/:id',component:goodInfo},
+        {path:'/vuex',component:vuex}
     ],
     linkActiveClass:'mui-active' //覆盖默认的路由高亮的类，默认的类是router-link-active
 })
